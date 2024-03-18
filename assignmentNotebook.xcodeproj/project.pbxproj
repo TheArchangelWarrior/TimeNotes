@@ -11,6 +11,9 @@
 		FC4FC57E2BA4D44B00FCCE08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC57D2BA4D44B00FCCE08 /* ContentView.swift */; };
 		FC4FC5802BA4D45600FCCE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4FC57F2BA4D45600FCCE08 /* Assets.xcassets */; };
 		FC4FC5832BA4D45600FCCE08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4FC5822BA4D45600FCCE08 /* Preview Assets.xcassets */; };
+		FC4FC58A2BA4D5BF00FCCE08 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4FC5892BA4D5BF00FCCE08 /* DataModel.swift */; };
+		FC52F8ED2BA4F4E400CF8D55 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC52F8EC2BA4F4E400CF8D55 /* ItemView.swift */; };
+		FC52F8EF2BA4F92500CF8D55 /* CreateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC52F8EE2BA4F92500CF8D55 /* CreateItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		FC4FC57D2BA4D44B00FCCE08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC4FC57F2BA4D45600FCCE08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC4FC5822BA4D45600FCCE08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC4FC5892BA4D5BF00FCCE08 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		FC52F8EC2BA4F4E400CF8D55 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		FC52F8EE2BA4F92500CF8D55 /* CreateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 		FC4FC57A2BA4D44B00FCCE08 /* assignmentNotebook */ = {
 			isa = PBXGroup;
 			children = (
+				FC4FC5892BA4D5BF00FCCE08 /* DataModel.swift */,
+				FC52F8EC2BA4F4E400CF8D55 /* ItemView.swift */,
+				FC52F8EE2BA4F92500CF8D55 /* CreateItemView.swift */,
 				FC4FC57B2BA4D44B00FCCE08 /* assignmentNotebookApp.swift */,
 				FC4FC57D2BA4D44B00FCCE08 /* ContentView.swift */,
 				FC4FC57F2BA4D45600FCCE08 /* Assets.xcassets */,
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC4FC57E2BA4D44B00FCCE08 /* ContentView.swift in Sources */,
+				FC52F8EF2BA4F92500CF8D55 /* CreateItemView.swift in Sources */,
 				FC4FC57C2BA4D44B00FCCE08 /* assignmentNotebookApp.swift in Sources */,
+				FC4FC58A2BA4D5BF00FCCE08 /* DataModel.swift in Sources */,
+				FC52F8ED2BA4F4E400CF8D55 /* ItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +284,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"assignmentNotebook/Preview Content\"";
+				DEVELOPMENT_TEAM = KNGGFR6GR6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"assignmentNotebook/Preview Content\"";
+				DEVELOPMENT_TEAM = KNGGFR6GR6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
