@@ -1,2 +1,2 @@
-# Assignment Notebook
-## The Last One You Will Ever Need
+# Time Notes
+## The Only Organanization Tool You'll Ever need
