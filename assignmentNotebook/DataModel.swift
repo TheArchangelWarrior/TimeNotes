@@ -13,9 +13,13 @@ import SwiftData
 class DataModel: Identifiable{
     var id: String
     var name: String
+    var subject: String
+    var isDone: Bool
     
-    init(name: String) {
+    init(name: String, subject: String) {
         self.id = UUID().uuidString
         self.name = name
+        self.subject = subject
+        self.isDone = false
     }
 }

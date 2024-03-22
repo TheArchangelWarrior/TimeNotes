@@ -15,29 +15,22 @@ struct ContentView: View {
     //Sheet View Stuff
     @State private var showingSheet = false
     @State private var name = ""
+    @State private var subject = ""
+    
     
     var body: some View {
         VStack {
-            Text("Assignment Notebook")
+            Text("Time Notes")
                 .font(.largeTitle)
-            Text("Press the \"+\" sign to create a new item. Swipe left ot delete an item.")
-            Button(action: {
-                showingSheet.toggle()
-                
-            }, label: {
-                Image(systemName: "plus.square.fill")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                    .scaledToFit()
-            })
-            .sheet(isPresented: $showingSheet){
-                CreateItemView()
-            }
+            Text("Click the \"+\" sign to add a new assignment.")
+                .font(.caption)
             Divider()
             List() {
                 ForEach(items){ item in
-                    ItemView(name: item.name)
+                    ItemView(name: item.name, subject: item.subject, isDone: item.isDone)
                 }
+
+
                 .onDelete { indexes in
                     for index in indexes{
                         deleteItem(items[index])
@@ -45,6 +38,19 @@ struct ContentView: View {
                 }
             }
             .listStyle(.insetGrouped)
+            Divider()
+            Button(action: {
+                showingSheet.toggle()
+                
+            }, label: {
+                Image(systemName: "plus.circle.fill")
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                    .scaledToFit()
+            })
+            .sheet(isPresented: $showingSheet){
+                CreateItemView()
+            }
         }
         .padding()
     }
